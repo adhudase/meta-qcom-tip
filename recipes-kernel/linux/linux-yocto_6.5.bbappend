@@ -1,4 +1,30 @@
 SRC_URI:append:qcom = " \
     file://0001-arm64-dts-qcom-qrb2210-rb1-Swap-UART-index.patch \
     file://0001-arm64-dts-qcom-qcm2290-temporarily-disable-cluster-i.patch \
+    file://0001-FROMLIST-arm64-dts-qcom-Use-QCOM_SCM_VMID-defines-fo.patch \
+    file://0002-FROMLIST-dt-bindings-arm-qcom-Add-QCM6490-Fairphone-.patch \
+    file://0003-FROMLIST-dt-bindings-arm-qcom-Add-QCM6490-IDP-board.patch \
+    file://0004-FROMLIST-arm64-dts-qcom-Add-qcm6490-dts-file.patch \
+    file://0005-QCLINUX-arm64-dts-qcom-Add-board-id-and-msm-id-for-Q.patch \
+    file://0006-FROMLIST-arm64-dts-qcom-sc7280-Add-UFS-nodes-for-sc7.patch \
+    file://0007-FROMGIT-phy-qcom-qmp-ufs-Add-Phy-Configuration-suppo.patch \
+    file://0008-PENDING-arm64-dts-qcom-Remove-voltage-vote-support-f.patch \
+    file://0009-PENDING-arm64-dts-qcm6490-Remove-voltage-voting-for-.patch \
+    file://0010-QCLINUX-arm64-dts-qcom-qcm6490-disable-sdhc1-for-ufs.patch \
+    file://0011-PENDING-arm64-dts-qcom-qcm6490-Add-UFS-nodes.patch \
+    file://0012-FROMLIST-dma-heap-Add-proper-kref-handling-on-dma-bu.patch \
+    file://0013-FROMLIST-dma-heap-Provide-accessors-so-that-in-kerne.patch \
+    file://0014-PENDING-arm64-dts-qcom-sc7280-Add-interconnect-paths.patch \
+    file://0015-PENDING-dt-bindings-arm-qcom-Add-QCM6490-RB3-board.patch \
+    file://0016-PENDING-arm64-dts-qcom-Add-qcm6490-rb3-support.patch \
+    file://0017-QCLINUX-arm64-dts-qcom-Add-board-id-and-msm-id-for-q.patch \
+    file://0018-PENDING-arm64-dts-qcom-Add-UFS-nodes-for-qcm6490-rb3.patch \
+    file://0019-PENDING-arm64-dts-qcom-Remove-voltage-vote-support-f.patch \
+    file://0020-PENDING-arm64-dts-qcm6490-rb3-Remove-voltage-voting-.patch \
+    file://0021-PENDING-clk-qcom-gcc-Enable-the-force-mem-core-for-U.patch \
+    file://0022-PENDING-arm64-dts-qcm6490-Update-the-protected-clock.patch \
+    file://0023-PENDING-clk-qcom-lpassaudiocc-Add-support-to-skip-PL.patch \
+    file://0024-PENDING-dt-bindings-clock-Add-qcom-adsp-skip-pll-pro.patch \
+    file://0025-PENDING-dt-bindings-pinctrl-qcom-sc7280-pinctrl-add-.patch \
+    file://0026-PENDING-arm64-dts-qcom-qcm6490-Add-gpio-reserved-ran.patch \
 "

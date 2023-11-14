@@ -1,0 +1,35 @@
+From e60b0092f6fec3594b56a29815366495d4184984 Mon Sep 17 00:00:00 2001
+From: Naina Mehta <quic_nainmeht@quicinc.com>
+Date: Tue, 17 Oct 2023 20:58:47 +0530
+Subject: [PATCH 17/27] QCLINUX: arm64: dts: qcom: Add board-id and msm-id for
+ qcm6490-rb3
+
+Add board-id and msm-id for QCM6490 RB3 platform as a workaround
+for picking correct DTB.
+
+Change-Id: I031d583f08bed2827746bc8c8f4568a8064f7698
+Signed-off-by: Naina Mehta <quic_nainmeht@quicinc.com>
+Signed-off-by: Atul Dhudase <quic_adhudase@quicinc.com>
+Upstream-Status: Pending
+---
+ arch/arm64/boot/dts/qcom/qcm6490-rb3.dts | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/qcom/qcm6490-rb3.dts b/arch/arm64/boot/dts/qcom/qcm6490-rb3.dts
+index 1aacd409e632..476ca1d1884b 100644
+--- a/arch/arm64/boot/dts/qcom/qcm6490-rb3.dts
++++ b/arch/arm64/boot/dts/qcom/qcm6490-rb3.dts
+@@ -21,6 +21,10 @@ / {
+ 	model = "Qualcomm Technologies, Inc. QCM6490 RB3";
+ 	compatible = "qcom,qcm6490-rb3", "qcom,qcm6490";
+ 
++	/* This will be deprecated soon */
++	qcom,msm-id = <497 0x10000>, <498 0x10000>, <475 0x10000>, <515 0x10000>;
++	qcom,board-id = <32 1>;
++
+ 	aliases {
+ 		serial0 = &uart5;
+ 	};
+-- 
+2.25.1
+

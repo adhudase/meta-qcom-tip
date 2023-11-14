@@ -1,0 +1,48 @@
+From 4b158792041876feffe6138b402f7b7b81ea8ee6 Mon Sep 17 00:00:00 2001
+From: Luca Weiss <luca.weiss@fairphone.com>
+Date: Tue, 19 Sep 2023 14:46:00 +0200
+Subject: [PATCH 02/27] FROMLIST: dt-bindings: arm: qcom: Add QCM6490 Fairphone
+ 5
+
+Fairphone 5 is a smartphone based on the QCM6490 SoC.
+
+Change-Id: I729b1f72557f940283a6302e76b02afe74b929e5
+Signed-off-by: Luca Weiss <luca.weiss@fairphone.com>
+Reviewed-by: Krzysztof Kozlowski <krzysztof.kozlowski@linaro.org>
+Link: https://lore.kernel.org/linux-arm-msm/20230919-fp5-initial-v2-6-14bb7cedadf5@fairphone.com/
+Patch-mainline: linux-arm-kernel @ 09/19/23, 14:46
+Signed-off-by: Komal Bajaj <quic_kbajaj@quicinc.com>
+Signed-off-by: Salendarsingh Gaud <quic_sgaud@quicinc.com>
+Signed-off-by: Atul Dhudase <quic_adhudase@quicinc.com>
+Upstream-Status: Submitted [https://lore.kernel.org/linux-arm-msm/20230919-fp5-initial-v2-6-14bb7cedadf5@fairphone.com/]
+---
+ Documentation/devicetree/bindings/arm/qcom.yaml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/Documentation/devicetree/bindings/arm/qcom.yaml b/Documentation/devicetree/bindings/arm/qcom.yaml
+index 450f616774e0..5d2cbddb6ab8 100644
+--- a/Documentation/devicetree/bindings/arm/qcom.yaml
++++ b/Documentation/devicetree/bindings/arm/qcom.yaml
+@@ -49,6 +49,7 @@ description: |
+         msm8998
+         qcs404
+         qcm2290
++        qcm6490
+         qdu1000
+         qrb2210
+         qrb4210
+@@ -382,6 +383,11 @@ properties:
+           - const: qcom,qrb2210
+           - const: qcom,qcm2290
+ 
++      - items:
++          - enum:
++              - fairphone,fp5
++          - const: qcom,qcm6490
++
+       - description: Qualcomm Technologies, Inc. Distributed Unit 1000 platform
+         items:
+           - enum:
+-- 
+2.25.1
+
