@@ -48,7 +48,6 @@ SRC_URI:append:qcom = " \
     file://qrb4210-dts/0002-arm64-dts-qcom-qrb4210-rb2-Enable-bluetooth.patch \
     file://qrb4210-dts/0001-arm64-dts-qcom-sm6115-Hook-up-interconnects.patch \
     file://qrb4210-dts/0001-arm64-dts-qcom-qrb4210-rb2-Enable-MPSS-and-Wi-Fi.patch \
-    file://qrb4210-dts/usb/0001-arm64-dts-qcom-qrb4210-rb2-don-t-force-usb-periphera.patch \
     file://qrb4210-dts/usb/0002-arm64-dts-qcom-qrb4210-rb2-Select-USB3-host-mode-by-.patch \
     file://qrb4210-dts/usb/0003-arm64-dts-qcom-sm6115-Enable-USB3-SS-phy.patch \
     file://generic-drivers/0001-FROMLIST-dma-heap-Add-proper-kref-handling-on-dma-bu.patch \

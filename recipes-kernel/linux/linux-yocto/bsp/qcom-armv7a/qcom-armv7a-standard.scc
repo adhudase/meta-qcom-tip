@@ -1,13 +1,13 @@
 # SPDX-License-Identifier: MIT
 
-define KMACHINE qcom-armv8a
+define KMACHINE qcom-armv7a
 define KTYPE standard
-define KARCH arm64
+define KARCH arm
 
 include ktypes/standard/standard.scc nocfg
-branch qcom-armv8a
+branch qcom-armv7a
 
-include qcom-armv8a.scc
+include qcom-armv7a.scc
 
 #include features/bluetooth/bluetooth.scc
 include features/cgroups/cgroups.scc
@@ -23,7 +23,4 @@ include cfg/fs/vfat.scc
 
 include cfg/timer/no_hz.scc
 
-# enable the ability to run 32 bit apps
-include arch/arm/32bit-compat.scc
-
-kconf hardware qcom-extra.cfg
+#kconf hardware qcom-extra.cfg
